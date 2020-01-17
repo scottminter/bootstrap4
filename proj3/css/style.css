@@ -9,6 +9,10 @@
     border-left: #444 3px solid;
 }
 
+#myCarousel {
+    border-bottom: #dc3546 6px solid;
+}
+
 .carousel-item {
     height: 450px;
 }
@@ -26,4 +30,45 @@
 .carousel-img-3 {
     background: url('../img/image3.jpg');
     background-size: cover;
+}
+
+/**
+ * THIS IS HOW YOU FLOAT OVER A STATIONARY BACKGROUND IMG
+ */
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    background: url('../img/lights.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    border-top: #dc3546 6px solid;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/**
+ * THIS IS HOW YOU FLOAT OVER A STATIONARY BACKGROUND IMG
+ */
+#video-play {
+    position: relative;
+    min-height: 200px;
+    background: url('../img/media.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -300px;
+    text-align: center;
+    color: #fff;
+}
+
+#video-play a {
+    color: #fff;
 }
